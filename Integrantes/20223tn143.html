@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&family=Montserrat">
     <script src='main.js'></script>
     <style>
-        body {
+        * {
+            margin: 0;
             background-size: cover;
             background-repeat: no-repeat;
-            font-family: 'Outfit';
+            font-family: 'Montserrat';
             text-align: center;
-            padding: 8px;
+            line-height: 20px;
         }
         .header {
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 100%;
-            height: auto;
+            width: auto;
+            padding: 1.5em;
             background: rgba(245, 245, 250, 0.5);
         }
         .contenedor {
@@ -34,23 +35,33 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 0.5em;
+            padding: 1em;
             margin-top: 25px;
             width: 50%;
             height: auto;
             background: rgba(245, 245, 250, 0.5);
         }
-        p {
-            font-family: 'Montserrat';
-            font-size: 1em;
-            line-height: 8px;
+        h2 {
+            font-family: 'Outfit';
+            margin-bottom: 20px;
         }
+        .btn_index, .btn_404{
+                display: inline-block;
+                margin: 15px 5px;
+                text-decoration: none;
+                background: rgb(120, 73, 169);
+                color: #f5f5fa;
+                padding: 10px 15px;
+                border-radius: 5px;
+                font-family: "Outfit";
+            }
     </style>
 </head>
 <!--<body>background="https://media.discordapp.net/attachments/684412071898906638/1103867637513080884/crying_cat_animated.gif?width=634&height=423" text="#1f1f29">-->
 <body background="crying cat animated.gif" text="#1f1f29">
     <div class="header" id="presentacion">
-            <marquee direction="right" behavior="alternate" scrollamount=20><h1>Presentación &#128128;</h1></marquee>
+            <!--<marquee direction="right" behavior="alternate" scrollamount=20><h1>Presentación &#128128;</h1></marquee>-->
+            <h1>Presentación &#128128;</h1>
     </div>
     <div class="contenedor" id="nombre_completo">
         <div class="elementos">
@@ -81,8 +92,12 @@
             <p>Jugar videojuegos</p>
             <p>Dormir</p>
             <p>Comer</p>
+            <p style="text-decoration: line-through;">Coger</p>
             </div>
         </div>
+        <img src="Aaaaaa mi mente weeeeee.jpg" alt="La imagen de un gato con la cara estirada diciendo: Aaaaaah, mi mente weeeeee!" width="200px" style="margin: 25px;"><br>
+        <a class="btn_index" href="BonziBuddy.github.io/index.html">Index</a>
+        <a class="btn_404" href="emi_millonario.html">Como invertir en fondos indexados</a>
     </div>
 </body>
 </html>

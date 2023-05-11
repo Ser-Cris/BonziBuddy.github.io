@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>Inception</title>
+        <meta charset="UTF-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel="icon" href="images/InceptionIcon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&family=Montserrat">
+        <script src='main.js'></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                font-family: "Montserrat";
+                background: #4f4f4f;
+                background: radial-gradient(circle, #4f4f4f 0%, #343434 65%, #1f1f29 100%);
+            }
+            h2{
+                font-family: "Outfit";
+            }
+            .info-container{
+                text-align: center;
+                width: 66vw;
+                height: 1395px;
+                background: #fafaf5;
+                padding: 20px 100px;
+                margin: 50px;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 2px;
+                border-color: #1f1f29;
+                line-height: 1.3;
+                color: #1f1f29;
+            }
+            .brief-info{
+                margin: 16px;
+                font-size: smaller;
+            }
+            .resena{
+                margin: 16px;
+                text-align: justify;
+            }
+            .trailer, .imagenes, .calificacion{
+                margin: 16px;
+                align-items: center;
+            }
+            iframe{
+                width: 36vw;
+            }
+            .calif-imdb, .calif-propia{
+                display: inline-block;
+                margin: 0px 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Inception: Nombre, año de publicación, productor/editorial, imágenes, reseña, calificación-->
+        <div class="info-container">
+            <strong><p style="font-family: Outfit; font-size: 48px;">Inception</p></strong><br>
+            <img src="https://www.nolanfans.com/images/posters/inception/p4xfull.jpg" height="200px" alt="Poster de la película Inception">
+            <div class="brief-info">
+                <p>En español: Origen &#x2022; 2010</p>
+                <p>Producido por: Cristopher Nolan, Emma Thomas</p>
+            </div>
+            <div class="resena">
+                <h2>Reseña</h2>
+                <hr>
+                <br>
+                <p>
+                    Inception (Origen) es una película fascinante dirigida por Christopher Nolan, que desafía la realidad al explorar
+                    los sueños y la mente humana. Con una trama intrincada y sorprendente, un elenco excepcional encabezado por
+                    Leonardo DiCaprio y una dirección visualmente deslumbrante, la película te sumerge en un laberinto mental lleno de
+                    giros inesperados. Además de su espectacularidad, Inception también aborda temas profundos sobre la naturaleza de la
+                    realidad y el poder de nuestras mentes. En resumen, es una joya cinematográfica que te cautivará desde el principio
+                    hasta el final.
+                </p>
+            </div>
+            <div class="imagenes">
+                <h2 style="text-align: left;">Imágenes</h2>
+                <hr>
+                <br>
+                <img src="https://street-warrior.ru/800/600/https/fb.ru/misc/i/gallery/51870/1821423.jpg" width="300px" height="200px" alt="Personajes de la película sobre el techo de un edificio viendo cómo se deforma la realidad">
+                <img src="http://2.bp.blogspot.com/_bl5ZnczG4Bs/TEpPtmMXVjI/AAAAAAAAClU/MdL5CGtf0pA/s400/preview-inception-431.jpg" width="300px" height="200px" alt="La famosa escena de Arthur peleando contra enemigos en los pasillos de un hotel, pasillos los cuales están rotando">
+            </div>
+            <div class="trailer">
+                <h2 style="text-align: left;">Trailer</h2>
+                <hr>
+                <br>
+                <iframe height="315" src="https://www.youtube-nocookie.com/embed/WrRMioLGFxs?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="calificacion">
+                <h2 style="text-align: left;">Calificación</h2>
+                <hr>
+                <br>
+                <div class="calif-imdb">
+                    <h2>IMDb</h2>
+                    <span class="imdbRatingPlugin" data-user="ur165323162" data-title="tt1375666" data-style="p1">
+                        <a href="https://www.imdb.com/title/tt1375666/?ref_=plg_rt_1"><img src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt="Inception (2010) on IMDb" /></a>
+                    </span>
+                    <script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="https://ia.media-imdb.com/images/G/01/imdb/plugins/rating/js/rating.js";stags.parentNode.insertBefore(js,stags);})(document,"script","imdb-rating-api");</script>
+                </div>
+                <div class="calif-propia">
+                    <h2 style="margin-bottom: 8px;">Propia</h2>
+                    <p>+20 y GOD</p>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -14,17 +14,26 @@
         }
     </style>
 </head>
-<body text="white" background="https://www.xtrafondos.com/descargar.php?id=3404&resolucion=3840x2160"> 
+<body id="imagenFondo" text="white" background="https://www.xtrafondos.com/descargar.php?id=3404&resolucion=3840x2160"> 
     <H1> Apex legends</H1>
+    <h2 id="textoHolaMundo"><strong>Hola Mundo</strong></h2>
+    <br>
+    <button onclick="ocultarHolaMundo()">Ocultar</button>
     <p><strong>Año de publicacion del juego</strong></p>
     <p> Apex legends se lanzo a todas las consolas el 4 de febrero del 2019 y para switch el 9 de marzo del 2019</p>
+
     <br>
+    <button onclick="escribirTexto()">Escribir Texto</button>
+    <br>
+    <div id="miDiv"></div>
     <p> <strong>Desarrollador y distribuidor</strong></p>
     <p> El juego fue desarrolado por Respawn Entertainment y distribuido por Electronics Arts</p>
     <br>
-    <img src="images/Bangalore.jpg" width="500px"> <img src="images/Batalla.jpg" width="500px">
+    <img id="imagen1" src="images/Bangalore.jpg" width="500px"> <img id="imagen2" src="images/Batalla.jpg" width="500px">
     <br>
-    <p><strong> Reseña</strong></p>
+    <button onclick="cambiarImagen()">cambiar Imagen</button>
+    <button onclick="regresarImagen()">Imagen Original</button>
+    <p id="resena"><strong> Reseña</strong></p>
     <p>El éxito de Apex Legends se debe a varios factores, uno de ellos es que el juego tiene como base el parte del desarrollo para Titanfall 2
     , un título de Respawn al que le fue muy bien en reseñas y que de hecho, gracias a la apabullante popularidad de Apex 
     ha visto regresar a muchos combatientes.
@@ -32,9 +41,35 @@
     al mismo tiempo que hicieron la experiencia lo más simple posible, además que lograron ofrecer algo que otros juegos
     del género no han podido: hacerte sentir que estás en un genuino campo de batalla.</p>
     <br>
+    <button onclick="cambioElementoP()">Cambiar elemento P</button>
     <p><strong> Calificacion y rango de edad</strong></p>
     <p> La calificacion que se le ha dado al juego es de 3.5 de 5 estrellas en distintas paginas
         y los usu deben de tener 12 años para poder jugarlo
     </p>
+    </br>
+    </br>
+    <button onclick="cambiarImgFondo()">Cambiar Imagen Fondo</button>
 </body>
+<script>
+    var textoP = "<strong>RESEÑA REALIZADA POR JAVASCRIPT</strong>";
+
+function ocultarHolaMundo(){
+    document.getElementById("textoHolaMundo").innerHTML = "";
+}
+function escribirTexto(){
+    document.getElementById("miDiv").innerHTML = "<H1>Este texto no lo escribió Hassiel Soria, lo escribió JavaScript</H1>";
+}
+function cambiarImagen(){
+    document.getElementById("imagen1").src = "images/seer.jpeg";
+}
+function regresarImagen(){
+    document.getElementById("imagen1").src = "images/Bangalore.jpg";
+}
+function cambioElementoP(){
+    document.getElementById("resena").innerHTML = textoP;
+}
+function cambiarImgFondo(){
+    document.getElementById("imagenFondo").background = "images/chapie.jpg";
+}
+</script>
 </html>>
